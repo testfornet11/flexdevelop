@@ -54,6 +54,11 @@
         'filter #{_duration(article)} ease-in-out'
       )
     );
+    background-image: url('../../images/bg1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
   }
 
   .body.is-article-visible & {
@@ -81,44 +86,8 @@
   margin: 18px auto;
 }
 
-article#services {width: 80% !important}
-
-.references .iconHolder  {background-image: url('../../images/references.png')}
-.contact .iconHolder {background-image: url('../../images/contact.png')}
-.aboutus .iconHolder {background-image: url('../../images/aboutus.png')}
-.prices .iconHolder {background-image: url('../../images/prices.png')}
-.services .iconHolder {background-image: url('../../images/services.png')}
-
-@media screen and (max-width: 480px) {
-  .iconHolder {margin-top: 9px}
-}
-
-.img.gatsby-image-wrapper {
-  width: 32.3%;
-  display: inline-block;
-  margin: 0.23% 0.5%;
-}
-
-@media screen and (max-width: 1100px) {
-  .img.gatsby-image-wrapper {width: 49%}
-}
-
-@media screen and (max-width: 800px) {
-  .img.gatsby-image-wrapper {
-    width: 100%;
-    margin: 0.4% 0;
-  }
-}
-
-.galleryLink {
-    float: right;
-    margin-top: 48px;
-    margin-bottom: -31px !important;
-    margin-right: -30px;
-    letter-spacing: 2px;
-    font-size:14px;
-}
-
-#bg .gatsby-image-wrapper {
-  height: 100vh;
-}
+.references {background-image: url('../../images/references.png')}
+.contact {background-image: url('../../images/contact.png')}
+.aboutus {background-image: url('../../images/aboutus.png')}
+.prices {background-image: url('../../images/prices.png')}
+.services {background-image: url('../../images/services.png')}

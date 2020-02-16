@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter - Dimension V2',
-    author: 'Hunter Chang',
-    description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
+    title: 'Flex website',
+    author: 'Zed78',
+    description: 'Dezsőék honlapja',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,6 +18,40 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        excludedRoutes: ['/wp/v2/users/**', '/wp/v2/settings*', '/wp/v2/themes'],
+        baseUrl: 'zsigmond.000webhostapp.com',
+        protocol: 'https',
+        hostingWPCOM: false,
+        useACF: true,
+        searchAndReplaceContentUrls: {
+          sourceUrl: 'https://zsigmond.000webhostapp.com',
+          replacementUrl: '',
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Source Sans Pro',
+            variants: ['300', '400', '500', '600', '700'],
+          },
+        ],
+      },
+    },
   ],
 }

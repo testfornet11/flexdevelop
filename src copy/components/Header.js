@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby';
+
 
 const Header = props => {
   const data = useStaticQuery(graphql`
     query {
-      wordpressPage(title: {eq: "Induló szöveg"}){
+      wordpressPage(title: {eq: "Home"}){
         content
       }
     }
@@ -21,53 +22,52 @@ const Header = props => {
         <h1>Flex KFT</h1>
         <div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}
         />
-        <Link className="galleryLink" to="/gallery">Tekintse meg képgalériánkat</Link>
       </div>
-
     </div>
     <nav>
       <ul>
         <li>
           <button
-            onClick={() => {props.onOpenArticle('about')}}
-            onMouseOver={() => {props.setWrapperClass('aboutus')}}
-            onMouseLeave={() => {props.removeWrapperClass()}}
+            
+            onClick={() => {
+              props.onOpenArticle('about');
+            }}
           >
             Rólunk
           </button>
         </li>
         <li>
           <button
-            onClick={() => {props.onOpenArticle('services')}}
-            onMouseOver={() => {props.setWrapperClass('services')}}
-            onMouseLeave={() => {props.removeWrapperClass()}}
+            onClick={() => {
+              props.onOpenArticle('services')
+            }}
           >
             Szolgáltatások
           </button>
         </li>
         <li>
           <button
-            onClick={() => {props.onOpenArticle('refs')}}
-            onMouseOver={() => {props.setWrapperClass('references')}}
-            onMouseLeave={() => {props.removeWrapperClass()}}
+            onClick={() => {
+              props.onOpenArticle('refs')
+            }}
           >
             Referenciák
           </button>
         </li>
         <li>
           <button
-            onClick={() => {props.onOpenArticle('price')}}
-            onMouseOver={() => {props.setWrapperClass('prices')}}
-            onMouseLeave={() => {props.removeWrapperClass()}}
+            onClick={() => {
+              props.onOpenArticle('price')
+            }}
           >
             Áraink
           </button>
         </li>
         <li>
           <button
-            onClick={() => {props.onOpenArticle('contact')}}
-            onMouseOver={() => {props.setWrapperClass('contact')}}
-            onMouseLeave={() => {props.removeWrapperClass()}}
+            onClick={() => {
+              props.onOpenArticle('contact')
+            }}
           >
             Kapcsolat
           </button>
