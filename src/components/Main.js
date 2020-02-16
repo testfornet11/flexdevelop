@@ -84,15 +84,15 @@ class Main extends React.Component {
           <h2 className="major">Kapcsolat</h2>
           <form name="contact" method="POST" netlify>
             <div className="field half first">
-              <label htmlFor="name">Név</label>
+              <label htmlFor="name">Név:</label>
               <input type="text" name="name" id="name" />
             </div>
             <div className="field half">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email:</label>
               <input type="text" name="email" id="email" />
             </div>
             <div className="field">
-              <label htmlFor="message">Üzenet</label>
+              <label htmlFor="message">Üzenet:</label>
               <textarea name="message" id="message" rows="4"></textarea>
             </div>
             <ul className="actions">
