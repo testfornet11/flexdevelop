@@ -82,27 +82,19 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Kapcsolat</h2>
-          <form name="contact" method="POST" netlify>
-            <div className="field half first">
-              <label htmlFor="name">Név:</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email:</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Üzenet:</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Küldés" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Mezők Törlése" />
-              </li>
-            </ul>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
           </form>
           <ul className="icons">
             <li>
