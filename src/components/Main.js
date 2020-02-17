@@ -82,18 +82,19 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Kapcsolat</h2>
-          <form name="contact" method="POST" data-netlify="true">
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="bot-field" />
             <p>
-              <label>Your Name: <input type="text" name="name" /></label>
+              <label>Név<input type="text" name="name" /></label>
             </p>
             <p>
-              <label>Your Email: <input type="email" name="email" /></label>
+              <label>Email<input type="email" name="email" /></label>
             </p>
             <p>
-              <label>Message: <textarea name="message"></textarea></label>
+              <label>Üzenet<textarea name="message"></textarea></label>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button type="submit">Küldés</button>
             </p>
           </form>
           <ul className="icons">
