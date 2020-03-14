@@ -18,7 +18,7 @@ const Header = props => {
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Flex KFT</h1>
+        <h1>TiptopLak</h1>
         <div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}
         />
         <Link className="galleryLink" to="/gallery">Tekintse meg képgalériánkat</Link>

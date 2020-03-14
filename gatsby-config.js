@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Flex website',
-    author: 'Zed78',
-    description: 'Dezsőék honlapja',
+    title: 'TiptopLak',
+    author: 'Zsigmond Deak',
+    description: 'TiptopLak',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
