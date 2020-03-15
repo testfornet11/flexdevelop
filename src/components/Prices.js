@@ -10,7 +10,7 @@ const Prices = () => {
     }
   `)
   return (
-    <div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}
+    <div className="prContainer" dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}
     />
   )
 }

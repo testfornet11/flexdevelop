@@ -32,5 +32,52 @@
 					@include vendor('transition-delay', 'none !important');
 				}
 			}
-
 	}
+
+.pc {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  line-height: 2;
+  margin: 0 0 2rem 0;
+}
+
+div.back {
+	padding: 0 8vw;
+	text-align: right;
+	margin: 4vw 0 -3vw;
+}
+
+
+
+#price {width: 100% !important}
+.prContainer span {
+        font-size: 14px !important;
+        color: #ffffff  !important;
+        font-family: "Source Sans Pro", sans-serif  !important;
+    }
+
+.prContainer table tbody tr { border: none !important}
+
+html body article#services {
+    width: 100% !important;
+    max-width: 800px !important;
+}
+
+html body article article#intro {
+    width: 100% !important;
+    max-width: 800px !important;
+}
+
+article#intro span,
+article#services span {
+    font-size: 14px !important;
+    color: #ffffff  !important;
+    font-family: "Source Sans Pro", sans-serif  !important;
+}
+
+article#services ul li p {margin: 0 !important}
+
+article#intro p { margin-bottom: 0}
+
+article#intro {padding-bottom: 4vw}

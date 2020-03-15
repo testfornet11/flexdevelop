@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import Bankgal from '../components/Bankgal'
 import Szatmargal from '../components/Szatmargal'
 import Hoszigetelesgal from '../components/Hoszigetelesgal'
@@ -11,6 +10,7 @@ export default ({ data }) => (
   <Hoszigetelesgal />
   <Bankgal />
   </div>
+
 )
 
 export const query = graphql`

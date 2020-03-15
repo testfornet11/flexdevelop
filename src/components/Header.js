@@ -1,15 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { Link } from 'gatsby'
 
 const Header = props => {
-  const data = useStaticQuery(graphql`
-    query {
-      wordpressPage(title: {eq: "Induló szöveg"}){
-        content
-      }
-    }
-  `)
 
   return (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -19,8 +12,9 @@ const Header = props => {
     <div className="content">
       <div className="inner">
         <h1>TiptopLak</h1>
-        <div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}
-        />
+        <div>
+        <div className="pc">KÉREM VÁLASSZON AZ ALÁBBI MENÜPONTOK KÖZÜL, VAGY <Link to="/calendar">TEGYEN BEJEGYZÉST NAPTÁRUNKBA.</Link></div>
+        </div>
         <Link className="galleryLink" to="/gallery">Tekintse meg képgalériánkat</Link>
       </div>
 

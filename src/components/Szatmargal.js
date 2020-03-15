@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 export default () => {
@@ -20,6 +20,9 @@ export default () => {
   return (
     <div>
       <div style={{Width: '95vw', margin: '20px auto', padding: '0 7vw'}}>
+      <div className="back">
+        <Link to="/">VISSZA</Link>
+      </div>
       <h3>Szatmár utca</h3>
         {data.allImageSharp.edges.map(edge =>
           <Img className="img" fluid={edge.node.fluid} />
