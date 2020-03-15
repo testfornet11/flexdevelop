@@ -13,7 +13,7 @@ const Header = props => {
       <div className="inner">
         <h1>TiptopLak</h1>
         <div>
-        <div className="pc">KÉREM VÁLASSZON AZ ALÁBBI MENÜPONTOK KÖZÜL, VAGY <Link to="/calendar">TEGYEN BEJEGYZÉST NAPTÁRUNKBA.</Link></div>
+        <div className="pc">KÉREM VÁLASSZON AZ ALÁBBI MENÜPONTOK KÖZÜL, VAGY <Link to="/calendar/">TEGYEN BEJEGYZÉST NAPTÁRUNKBA.</Link></div>
         </div>
         <Link className="galleryLink" to="/gallery">Tekintse meg képgalériánkat</Link>
       </div>
