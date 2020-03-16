@@ -71,7 +71,7 @@
 }
 
 .iconHolder {
-  background-position: center;
+  background-position: 20px;
   background-size: auto 50px;
   background-repeat: no-repeat;
   z-index: 1;
@@ -83,11 +83,11 @@
 
 article#services {width: 80% !important}
 
-// .references .iconHolder  {background-image: url('../../images/references.png')}
-// .contact .iconHolder {background-image: url('../../images/contact.png')}
-// .aboutus .iconHolder {background-image: url('../../images/aboutus.png')}
-// .prices .iconHolder {background-image: url('../../images/prices.png')}
-// .services .iconHolder {background-image: url('../../images/services.png')}
+.aboutus .iconHolder  {background-position: -131px}
+.services .iconHolder {background-position: -221px}
+.prices .iconHolder {background-position: -298px}
+.references .iconHolder {background-position: -45px}
+.contact .iconHolder {background-position: -378px !important}
 
 .iconHolder {background-image: url('../../images/icon_sprite.png')}
 
