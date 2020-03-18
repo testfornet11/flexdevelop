@@ -83,11 +83,16 @@
 
 article#services {width: 80% !important}
 
-.aboutus .iconHolder  {background-position: -131px}
-.services .iconHolder {background-position: -221px}
-.prices .iconHolder {background-position: -298px}
-.references .iconHolder {background-position: -45px}
-.contact .iconHolder {background-position: -378px !important}
+.iconHolder .gatsby-image-wrapper {left: 50px}
+.aboutus .gatsby-image-wrapper {left: -124px}
+.services .gatsby-image-wrapper {left: -211px}
+.prices .gatsby-image-wrapper {left: -284px}
+.aboutus .gatsby-image-wrapper {left: -124px}
+.references .gatsby-image-wrapper {left: -42px}
+.contact .gatsby-image-wrapper {left: -359px}
+
+.iconHolder {overflow: hidden}
+.iconHolder .gatsby-image-wrapper {width: 431px; top: 2px}
 
 .iconHolder {background-image: url('../../images/icon_sprite.png')}
 

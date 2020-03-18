@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'gatsby'
+import {HeaderIcons} from '../components/HeaderIcons'
 
 const Header = props => {
 
   return (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="iconHolder services"></span>
+      <span className="iconHolder">
+        <HeaderIcons />
+      </span>
     </div>
     <div className="content">
       <div className="inner">
