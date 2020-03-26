@@ -1,16 +1,18 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import SzatmarSlide from '../components/SzatmarSlide'
+import BankSlide from '../components/BankSlide'
+import HoszigetelesSlide from '../components/HoszigetelesSlide'
 
 const References = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      wordpressPage(title: {eq: "Referenciák"}){
-        content
-      }
-    }
-  `)
   return (
-    <div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}/>
+    <div id="slider" className="st-slider">
+      <div className="sliderWrapper">
+          <SzatmarSlide />
+          <BankSlide />
+          <HoszigetelesSlide />
+          <BankSlide />
+      </div>
+    </div>
   )
 }
 
