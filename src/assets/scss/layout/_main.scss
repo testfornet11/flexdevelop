@@ -118,5 +118,14 @@
 		#header .galleryLink {
 			margin-right: 0
 		}
-
 	}
+
+	@media screen and (max-width: 736px) {
+	.iconHolder {margin: 10px auto}
+	.iconHolder .gatsby-image-wrapper {width: 368px; top: 4px}
+	.aboutus .gatsby-image-wrapper {left: -38px !important}
+	.services .gatsby-image-wrapper { left: -182px !important}
+	.references .gatsby-image-wrapper { left: -38px !important}
+	.prices .gatsby-image-wrapper { left: -245px !important}
+	.contact .gatsby-image-wrapper { left: -309px !important}
+}

@@ -1,5 +1,4 @@
 import React from 'react'
-import { graphql } from "gatsby"
 import Bankgal from '../components/Bankgal'
 import Szatmargal from '../components/Szatmargal'
 import Hoszigetelesgal from '../components/Hoszigetelesgal'
