@@ -9,7 +9,7 @@ export default () => {
       content
       title
       }
-      file(name: {regex: "/slide_bank/"}) {
+      file(name: {regex: "/sldb/"}) {
         childImageSharp {
           id
           fluid {
