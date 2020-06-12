@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export const HeaderIcons = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "icon_sprite.png" }) {
+      file(relativePath: { eq: "icon_sprite.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -15,5 +15,5 @@ export const HeaderIcons = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.file.childImageSharp.fluid} />
 }

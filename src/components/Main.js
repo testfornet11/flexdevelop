@@ -15,6 +15,8 @@ class Main extends React.Component {
         onClick={() => {
           this.props.onCloseArticle()
         }}
+        role="button"
+        tabIndex="0"
       ></div>
     )
 

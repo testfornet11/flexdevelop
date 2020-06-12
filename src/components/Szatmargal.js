@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-    allImageSharp(filter: {fluid: {originalName: {regex: "/szatmar/"}}}) {
+    allImageSharp(filter: {fluid: {originalName: {regex: "/szatmar/", ne: "slide_szatmar.jpg"}}}) {
       edges {
         node {
           fluid {

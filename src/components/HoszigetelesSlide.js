@@ -9,23 +9,20 @@ export default () => {
       content
       title
       }
-      allImageSharp(filter: {fluid: {originalName: {regex: "/slide_hoszig/"}}}) {
-        edges {
-          node {
-            fluid {
-              ...GatsbyImageSharpFluid
-              }
-            }
+      file(name: {regex: "/slide_hoszig/"}) {
+        childImageSharp {
+          id
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
+      }
     }
   `)
 
   return (
     <div>
-        {data.allImageSharp.edges.map(edge =>
-          <Img className="img" fluid={edge.node.fluid} />
-        )}
+        <Img className="img" fluid={data.file.childImageSharp.fluid} />
         <h2 className="description" dangerouslySetInnerHTML={{ __html: data.wordpressPage.title }} />
         <h4 className="description" dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }} />
     </div>
