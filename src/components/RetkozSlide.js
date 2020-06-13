@@ -5,11 +5,11 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      wordpressPage(title: {eq: "Hőszigetelés"}) {
+      wordpressPage(title: {eq: "Rétköz"}) {
       content
       title
       }
-      file(name: {regex: "/sldh/"}) {
+      file(name: {regex: "/sldrkoz/"}) {
         childImageSharp {
           id
           fluid {
