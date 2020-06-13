@@ -1,7 +1,7 @@
 import React from 'react';
 import SzatmarSlide from '../components/SzatmarSlide'
 import BankSlide from '../components/BankSlide'
-import HoszigetelesSlide from '../components/HoszigetelesSlide'
+import RetkozSlide from '../components/RetkozSlide'
 
 const References = () => {
   return (
@@ -9,7 +9,7 @@ const References = () => {
       <div className="sliderWrapper">
           <SzatmarSlide />
           <BankSlide />
-          <HoszigetelesSlide />
+          <RetkozSlide />
           <BankSlide />
       </div>
     </div>
