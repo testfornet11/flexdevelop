@@ -161,9 +161,16 @@ span.space {
 }
 
 @media screen and (max-width: 360px) {
+	.galleryLink {
+    float: none;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+	}
+
 	.iconHolder .gatsby-image-wrapper {
 	    width: 315px;
-	    top: 4px !important;
+	    top: 5px !important;
 	}
 
 	.iconHolder .gatsby-image-wrapper {left: -2px}
