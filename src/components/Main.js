@@ -99,6 +99,7 @@ class Main extends React.Component {
               <button type="submit">Küldés</button>
             </p>
           </form>
+          <h4>Telefon:<span class="space" /> 06-70/3271839 <span class="space" />06-20/5631027</h4>
           <ul className="icons">
             <li>
               <a target="_blank" href="https://www.facebook.com/TiptopLak-107970284128917/" className="icon fa-facebook">

@@ -122,10 +122,40 @@
 
 	@media screen and (max-width: 736px) {
 	.iconHolder {margin: 10px auto}
-	.iconHolder .gatsby-image-wrapper {width: 368px; top: 4px}
-	.aboutus .gatsby-image-wrapper {left: -38px !important}
-	.services .gatsby-image-wrapper { left: -182px !important}
-	.references .gatsby-image-wrapper { left: -38px !important}
-	.prices .gatsby-image-wrapper { left: -245px !important}
-	.contact .gatsby-image-wrapper { left: -309px !important}
+	.iconHolder .gatsby-image-wrapper {width: 368px; top: 6px}
+	.aboutus .gatsby-image-wrapper {left: -135px !important}
+	.services .gatsby-image-wrapper { left: -200px !important}
+	.references .gatsby-image-wrapper { left: -74px !important}
+	.prices .gatsby-image-wrapper { left: -256px !important}
+	.contact .gatsby-image-wrapper { left: -312px !important}
+}
+
+
+#contact form button {
+    width: 100%;
+    background: rgba(225,225,225,0.5);
+    line-height: normal !important;
+    height: 2.55rem !important;
+}
+
+#contact h4 {
+	text-align: center;
+}
+
+#contact ul.icons {
+    text-align: center;
+    margin-top: 3vw;
+}
+
+span.space {
+	display: inline-block;
+	width: 1vw;
+	height: 30px;
+}
+
+@media screen and (max-width: 580px) {
+	span.space {
+		display: block;
+		height: 1px;
+	}
 }
