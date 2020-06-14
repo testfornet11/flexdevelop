@@ -106,7 +106,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout location={this.props.location}>
-        <SEO title="Indoló oldal" keywords={['testkeyword']} />
+        <SEO title="TiptopLak" keywords={['testkeyword']} />
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper" className={this.state.wrapperClass}>
             <Header
