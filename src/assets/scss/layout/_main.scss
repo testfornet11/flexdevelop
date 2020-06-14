@@ -159,3 +159,17 @@ span.space {
 		height: 1px;
 	}
 }
+
+@media screen and (max-width: 360px) {
+	.iconHolder .gatsby-image-wrapper {
+	    width: 315px;
+	    top: 4px !important;
+	}
+
+	.iconHolder .gatsby-image-wrapper {left: -2px}
+	.aboutus .gatsby-image-wrapper {left: -62px !important}
+	.services .gatsby-image-wrapper { left: -170px !important}
+	.references .gatsby-image-wrapper { left: -63px !important}
+	.prices .gatsby-image-wrapper { left: -217px !important}
+	.contact .gatsby-image-wrapper { left: -264px !important}
+}
