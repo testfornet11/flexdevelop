@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      wordpressPage(title: {eq: "Rétköz"}) {
+      wordpressPage(title: {eq: "Rétköz utca"}) {
       content
       title
       }

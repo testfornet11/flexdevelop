@@ -31,13 +31,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        excludedRoutes: ['/wp/v2/users/**', '/wp/v2/settings*', '/wp/v2/themes'],
-        baseUrl: 'zsigmond.000webhostapp.com',
+        excludedRoutes: ['/wp/v2/users/**', '/wp/v2/settings*', '/wp/v2/themes', '/wp/v2/block-directory/search', '/wp/v2/block-types', '/wp/v2/plugins'],
+        baseUrl: 'ttlak2020.000webhostapp.com',
         protocol: 'https',
         hostingWPCOM: false,
         useACF: true,
         searchAndReplaceContentUrls: {
-          sourceUrl: 'https://zsigmond.000webhostapp.com',
+          sourceUrl: 'https://ttlak2020.000webhostapp.com',
           replacementUrl: '',
         },
       },
